@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pong</title>
+  <link rel="stylesheet" href="stylesheets/styles.css"/>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+
+<canvas id="myCanvas" width="680" height="550" style="border: 5px solid #666"></canvas>
+<!--
+<script>
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 10;
+var dy = -2;
+
+
+//paddles
+var playerPaddleHeight = 75;
+var playerPaddleWidth = 10;
+var playerPaddleX = (canvas.width-playerPaddleWidth)/6;
+var playerPaddleY = (canvas.height-playerPaddleHeight)/2;
+
+var computerPaddleHeight = 75;
+var computerPaddleWidth = 10;
+var computerPaddleX = (canvas.width-playerPaddleWidth)/2 + 150;
+var computerPaddleY = (canvas.height-playerPaddleHeight)/5;
+
+
+//keyboard controls
+var keysDown = {};
+addEventListener('keydown', function(e) { //listens to any key being pressed
+  keysDown[e.keyCode] = true; //grabs the keyCode and returns true
+}, false); //initial value of false
+
+var keysUp = {};
+addEventListener('keyup', function(e) {
+  delete keysDown[e.keyCode];
+}, false);
+
+function drawBall() {
+//draw the ball
+ctx.beginPath();
+ctx.arc(x, y, ballRadius, 0, Math.PI*2); // x & y coord of arc center, arc radius, start/end angle in radians
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.closePath();
+
+function drawPlayerPaddle() {
+  ctx.beginPath();
+  ctx.rect(playerPaddleX, playerPaddleY, playerPaddleWidth, playerPaddleHeight);
+  ctx.fillStyle = 'black';
+  ctx.fill();
+  ctx.closePath();
+}
+drawPlayerPaddle();
+
+function drawComputerPaddle() {
+  ctx.beginPath();
+  ctx.rect(computerPaddleX, computerPaddleY, computerPaddleWidth, computerPaddleHeight);
+  ctx.fillStyle = 'black';
+  ctx.fill();
+  ctx.closePath();
+}
+drawComputerPaddle();
+}
+//update game objects
+var updateObj = function(modifier) {
+  if (32 in keysDown)  {
+    playerPaddleY += 7;
+  }
+}
+updateObj();
+
+function draw() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+drawBall();
+x += dx;
+y += dy;
+//collision logic
+  if(y + dy > canvas.height-ballRadius) {
+    dy = -dy;
+  }
+  if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+    dx = -dx;
+  }
+}
+setInterval(draw, 10);
+
+var ballRadius = 5;
+
+
+
+</script> -->
+
+
+
+<!-- defer JavaScript till page loads -->
+<script type="text/javascript">
+function jsOnLoad() {
+var element = document.createElement("script");
+element.src = "scripts/scripts.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener) {
+  window.addEventListener("load", jsOnLoad, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", jsOnLoad);
+} else window.onload = jsOnLoad;
+</script>
+</body>
+</html>

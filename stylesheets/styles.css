@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #FFF;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #FFF;
+  background-image: url("/images/Combined-conference-and-ping-pong-table-by-Richard-Hutten-for-Lande_Dezeen-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
