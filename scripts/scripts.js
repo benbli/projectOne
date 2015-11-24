@@ -91,15 +91,18 @@ ball = {
     // if (player paddle is hit x4 = increase vel)
     //   this.vel.y *= this.fac;
 
-    //left side boundary limitations
+    //left side paddle boundary
     if (this.x + this.vel.x < player.width + this.radius) {
-      // if(this.y <  )
+      if (this.y > player.y && this.y < player.y + player.height) {
         this.vel.x = -this.vel.x;
+      }
     }
 
-    //right side boundary limitations
+    //right side paddle boundary
     if (this.x + this.vel.x > (canvas.width - this.radius) - ai.width) {
-      this.vel.x = -this.vel.x;
+      if(this.y > ai.y && this.y < ai.y + ai.height) {
+        this.vel.x = -this.vel.x;
+      }
     }
   },
   draw : function() {
