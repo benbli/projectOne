@@ -6,9 +6,12 @@ body {
 }
 canvas {
   display: block;
+  position: relative;
   margin: 0 auto;
   background-color: #FFF;
-  background-image: url("/images/Combined-conference-and-ping-pong-table-by-Richard-Hutten-for-Lande_Dezeen-1.jpg");
+  /*z-index: 1;*/
+  background-image: url("/images/pong table.png");
   background-repeat: no-repeat;
   background-size: cover;
+
 }
