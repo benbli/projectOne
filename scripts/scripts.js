@@ -3,7 +3,7 @@ console.log("loaded");
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
 var player;
-// var playerTwo;
+// var playerTwo; //working version uses var ai as a second player
 var ai;
 var ball;
 var upArrow = 38;
@@ -16,14 +16,15 @@ var lives = 3;
 var startBtn = {};
 var restartBtn = {};
 var over = 0;
-//update with later versions//
+
+//[PARTICLES] update with later versions//
 // var particlesCount = 20;
 // var flag = 0;
 // var particles = [];
 // var particlePos = {};
 // var multiplier = 1;
 // collision = document.getElementById("collide");
-//-----------------------//
+
 player = {
   x : null,
   y : null,
@@ -69,7 +70,7 @@ ball = {
   y : null,
   g : 0.1, //gravity
   vel : null, //velocity
-  fac : .8, //factor for changing ball velocity
+  fac : 1, //factor for changing ball velocity
   speed : 10,
   radius : 6,
   width : 600,// *placeholder: change the ball init
@@ -94,7 +95,10 @@ ball = {
     //left side paddle boundary
     if (this.x + this.vel.x < player.width + this.radius) {
       if (this.y > player.y && this.y < player.y + player.height) {
-        this.vel.x = -this.vel.x;
+        this.vel.x = -this.vel.x + this.fac;
+      } else {
+          alert(":: GAME OVER :: Player TWO Wins");
+          document.location.reload();
       }
     }
 
@@ -102,6 +106,9 @@ ball = {
     if (this.x + this.vel.x > (canvas.width - this.radius) - ai.width) {
       if(this.y > ai.y && this.y < ai.y + ai.height) {
         this.vel.x = -this.vel.x;
+      } else {
+          alert(":: GAME OVER :: Player ONE Wins");
+          document.location.reload();
       }
     }
   },
