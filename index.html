@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Pong</title>
   <link rel="stylesheet" href="stylesheets/styles.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 </head>
 <body>
@@ -11,15 +12,16 @@
 <br>
 <br>
 <br>
-
+<audio id="collideFx" src="media/misc_menu_4.wav" preload="true" style="display: none;">
+</audio>
+<div class="button-bar">
+  <button class="btn-w">W</button>
+  <button class="btn-s">S</button>
+  <button class="btn-up">&uarr;</button>
+  <button class="btn-dn">&darr;</button>
+</div>
 <canvas id="myCanvas" width="680" height="540" ></canvas>
 
-<div class="menu">
-  <button class="btn">W</button>
-  <button class="btn">S</button>
-  <button class="btn">Up</button>
-  <button class="btn">Down</button>
-</div>
 
 <!-- defer JavaScript till page loads -->
 <script type="text/javascript">
