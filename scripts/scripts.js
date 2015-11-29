@@ -12,7 +12,6 @@ var downArrow = 40;
 var wKey = 87;
 var sKey = 83;
 // var spaceBar = 32; //later version 'action key'
-var points = 0;
 var lives = 3;
 var startBtn = {};
 var restartBtn = {};
@@ -124,7 +123,7 @@ ball = {
   draw : function() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
-    ctx.fillStyle = 'rgba(0,0,0,0.8)'; //ball trail not working
+    ctx.fillStyle = 'rgba(0,0,0,)'; //ball trail not working
     ctx.fill();
     ctx.closePath();
   }
