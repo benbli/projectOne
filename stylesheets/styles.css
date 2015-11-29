@@ -12,7 +12,7 @@ canvas {
   margin: 0 auto;
   margin-top: 5px;
   background-color: #fff;
-  background-image: url("images/pong-table.png");
+  background-image: url("../images/pong-table.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
