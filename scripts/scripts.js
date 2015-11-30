@@ -1,5 +1,5 @@
 console.log("loaded");
-
+//
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
 var collideFx = document.getElementById('collideFx');
@@ -13,17 +13,26 @@ var wKey = 87;
 var sKey = 83;
 // var spaceBar = 32; //later version 'action key'
 var lives = 3;
-var startBtn = {};
+// var startBtn = new Image();
 var restartBtn = {};
 var over = 0;
 
-//[PARTICLES] update with later versions//
+//[UPDATES] updates with later versions//
 // var particlesCount = 20;
 // var flag = 0;
 // var particles = [];
 // var particlePos = {};
 // var multiplier = 1;
 // collision = document.getElementById("collide");
+//
+// start = {
+//   draw: function() {
+//     ctxBtn.font = "bold 96px Helvetica, Arial, sans-serif";
+//     ctxBtn.fillText("play", 0, 75);
+//     ctxBtn.fillStyle = 'rgb(85, 204, 249)';
+//   }
+// }
+//   startBtn.src = "images/icon.png";
 
 player = {
   x : null,
@@ -132,7 +141,6 @@ function main() {
   var canvas = document.getElementById('myCanvas');
   var ctx = canvas.getContext('2d');
 
-
   keystate = {};
   document.addEventListener('keydown', function(e){
     keystate[e.keyCode] = true;
@@ -182,7 +190,11 @@ function draw() {
   ball.draw();
   ctx.restore();
 }
-main();
+$("#start-button").on('click', function() {
+  $("#welcomeScreen").fadeOut(1000, 0);
+  main();
+});
+
 
 //hit path, and a miss path
 //when AI gets harder, increase times of hit path, decrease times of miss
