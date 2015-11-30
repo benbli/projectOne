@@ -6,20 +6,29 @@ body {
   overflow: hidden;
   background: #FFF;
 }
-canvas {
+#start-button {
+  position: absolute;
+  top: 100px;
+  left: 485px;
+  margin: 0 auto;
+  z-index: 1;
+  font-size: 60px;
+}
+#myCanvas {
   display: block;
   position: relative;
   margin: 0 auto;
-  margin-top: 5px;
-  background-color: #fff;
+  background-color: #000;
   background-image: url("../images/pong-table.png");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 .button-bar {
   display: block;
   position: relative;
   margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
   max-width: 680px;
 }
