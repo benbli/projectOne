@@ -1,24 +1,28 @@
 #projectOne: Pong
-##This is an on-going project created by a student at General Assembly, New York. Feel free to play this interpretation of the class game: Pong. Have fun!  
+This is an on-going project created by a student at General Assembly, New York. Feel free to play this interpretation of the classic game: Pong. Have fun!  
+---
 
 ![splash screen](images/screenshots/Screen Shot 2015-11-30 at 21.06.50.png)
-##This is the splash screen. The user can click on the test to start the game.
+This is the splash screen. The user can click on the test to start the game.
+---
 
 ![game play](images/screenshots/Screen Shot 2015-11-30 at 21.08.03.png)
-##Typical game play looks like this. Player one's controls are the "W" and "S" keys to move the paddle.
-##Player two's are "up" and "down" arrow keys.
+Typical game play looks like this. Player one's controls are the "W" and "S" keys to move the paddle.
+Player two's are "up" and "down" arrow keys.
+---
 
 ![game over](images/screenshots/Screen Shot 2015-11-30 at 21.08.08.png)
-##A prompt will appear when either player wins. Click "ok" to start the game over.
+A prompt will appear when either player wins. Click "ok" to start the game over.
+---
 
 #Technologies:
-##This game features HTML5, CSS, JAVASCRIPT/JQUERY and CANVAS and should run on most updated browsers.
+This game features HTML5, CSS, JAVASCRIPT/JQUERY and CANVAS and should run on most updated browsers.
 
 #URL:
-##benbli.github.io
+<http://benbli.github.io>
 
 #History:
-##version 0.1 submitted on Nov 30, 2015
+version 0.1 submitted on Nov 30, 2015
 
 #Contributing:
 Fork it!
