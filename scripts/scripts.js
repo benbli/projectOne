@@ -198,3 +198,4 @@ $("#start-button").on('click', function() {
 
 //hit path, and a miss path
 //when AI gets harder, increase times of hit path, decrease times of miss
+//mobile ideas: tilting the phone will make the hanging lamp glow in the direction that the phone is leaning towards
