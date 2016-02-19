@@ -19,7 +19,7 @@ A prompt will appear when either player wins. Click "ok" to start the game over.
 This game features HTML5, CSS, JAVASCRIPT/JQUERY and CANVAS and should run on most updated browsers.
 
 #URL:
-<http://benbli.github.io>
+<http://benbli.github.io/projectOne>
 
 #History:
 version 0.1 submitted on Nov 30, 2015
