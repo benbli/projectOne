@@ -18,12 +18,9 @@ body {
   display: block;
   position: relative;
   margin: 0 auto;
-<<<<<<< HEAD
   margin-top: 5px;
   background-color: #fff;
-=======
   background-color: #000;
->>>>>>> master
   background-image: url("../images/pong-table.png");
   background-repeat: no-repeat;
   background-size: cover;
