@@ -2,7 +2,7 @@
 This is an on-going project created by a student at General Assembly, New York. Feel free to play this interpretation of the classic game: Pong. Have fun!  
 ---
 
-![splash screen](/images/screenshots/Screen Shot%202015-11-30%20at%2021.06.50.png)
+![splash screen](/images/screenshots/Screen%20Shot%202015-11-30%20at%2021.06.50.png)
 This is the splash screen. The user can click on the test to start the game.
 ---
 
